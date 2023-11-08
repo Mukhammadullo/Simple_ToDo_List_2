@@ -298,8 +298,13 @@ td {
 
 
 /* tdThreedot */
-.tdThreedot{
+.tdThreedot {
     cursor: pointer;
 }
 
-/* tdStatus */
+/* dialogEdit */
+.dialogEdit {
+    width: 380px;
+    height: 460px;
+    border: none;
+}

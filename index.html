@@ -10,92 +10,102 @@
     <title>User List</title>
 </head>
 
-<body>
 
-    <!-- head -->
-    <div class="head">
-        <div class="head_left">
-            <p class="head_left_title">User List</p>
-        </div>
-        <div class="head_right">
-            <button class="btnNew">+ New</button>
-            <div class="head_right_btns">
-                <button class="btnLight"><i class="fa-regular fa-sun"></i>LIGHT</button>
-                <button class="btnDark"><i class="fa-solid fa-moon"></i>DARK</button>
-            </div>
+<!-- head -->
+<div class="head">
+    <div class="head_left">
+        <p class="head_left_title">User List</p>
+    </div>
+    <div class="head_right">
+        <button class="btnNew">+ New</button>
+        <div class="head_right_btns">
+            <button class="btnLight"><i class="fa-regular fa-sun"></i>LIGHT</button>
+            <button class="btnDark"><i class="fa-solid fa-moon"></i>DARK</button>
         </div>
     </div>
+</div>
 
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="navbar_left">
-            <select name="" id="" class="inpStatus">
-                <option value="">All status</option>
-                <option value="">Active</option>
-                <option value="">Inective</option>
-            </select>
+<!-- navbar -->
+<div class="navbar">
+    <div class="navbar_left">
+        <select name="" id="" class="inpStatus">
+            <option value="">All status</option>
+            <option value="">Active</option>
+            <option value="">Inective</option>
+        </select>
 
-            <select name="" id="" class="inpCity">
-                <option value="">All cites</option>
-                <option value="">Dushanbe</option>
-                <option value="">Bokhtar</option>
-                <option value="">Khujand</option>
-            </select>
+        <select name="" id="" class="inpCity">
+            <option value="">All cites</option>
+            <option value="">Dushanbe</option>
+            <option value="">Bokhtar</option>
+            <option value="">Khujand</option>
+        </select>
 
 
-        </div>
-        <div class="navbar_right">
-            <input type="search" class="inpSearch" placeholder="Name, email,etc... ">
-        </div>
     </div>
+    <div class="navbar_right">
+        <input type="search" class="inpSearch" placeholder="Name, email,etc... ">
+    </div>
+</div>
 
 
-    <!-- dialog Add -->
-    <dialog class="dialogAdd">
-        <div class="dialogAdd_title">
-            <h1>Add New</h1>
-            <button class="dialogAdd_btnx"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <input type="text" placeholder=".png / .jpg / .jpeg" class="dialogAdd_img">
-        <input type="text" placeholder="Name" class="dialogAdd_name">
-        <input type="text" placeholder="Surname" class="dialogAdd_surname">
-        <input type="text" placeholder="E-mail" class="dialogAdd_email">
-        <input type="text" placeholder="chosse state" class="dialogAdd_state">
-        <input type="text" placeholder="city" class="dialogAdd_city">
-        <input type="text" placeholder="phone" class="dialogAdd_phone">
-        <div class="dialogAdd_footer">
-            <button class="dialogAdd_save">SAVE</button>
-            <button class="dialogAdd_cancel">CANCEL</button>
-        </div>
-    </dialog>
+<!-- dialog Add -->
+<dialog class="dialogAdd">
+    <div class="dialogAdd_title">
+        <h1>Add New</h1>
+        <button class="dialogAdd_btnx"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <input type="text" placeholder=".png / .jpg / .jpeg" class="dialogAdd_img">
+    <input type="text" placeholder="Name" class="dialogAdd_name">
+    <input type="text" placeholder="Surname" class="dialogAdd_surname">
+    <input type="text" placeholder="E-mail" class="dialogAdd_email">
+    <input type="text" placeholder="chosse state" class="dialogAdd_state">
+    <input type="text" placeholder="city" class="dialogAdd_city">
+    <input type="text" placeholder="phone" class="dialogAdd_phone">
+    <div class="dialogAdd_footer">
+        <button class="dialogAdd_save">SAVE</button>
+        <button class="dialogAdd_cancel">CANCEL</button>
+    </div>
+</dialog>
 
 
-    <!-- dialog settings -->
-    <dialog class="dialogSetings">
-        <button class="dialogSetings_view"><i class="fa-solid fa-circle-user"></i>View profile</button>
-        <button class="dialogSetings_edit"><i class="fa-solid fa-pen"></i>Edit</button>
-        <button class="dialogSetings_delete"><i class="fa-solid fa-trash"></i>Delete</button>
-    </dialog>
+<!-- dialogEdit -->
+
+<dialog class="dialogEdit">
+    <input type="text" class="EditImg">
+    <input type="text" class="EditName">
+    <input type="text" class="EditEmail">
+    <input type="text" class="EditCity">
+    <input type="text" class="EditPhone">
+    <button class="dialogEditbtn">Edit</button>
+</dialog>
+
+<!-- dialog settings -->
+<dialog class="dialogSetings">
+    <button class="dialogSetings_view"><i class="fa-solid fa-circle-user"></i>View profile</button>
+    <button class="dialogSetings_edit"><i class="fa-solid fa-pen"></i>Edit</button>
+    <button class="dialogSetings_delete"><i class="fa-solid fa-trash"></i>Delete</button>
+</dialog>
 
 
-    <!-- table User -->
-    <table class="table">
-        <!-- thead -->
-        <thead>
-            <th><i class="fa-solid fa-user"></i>Name</th>
-            <th><i class="fa-solid fa-lock"></i>City</th>
-            <th><i class="fa-solid fa-clock"></i>Status<i class="fa-solid fa-arrow-up-long"></i></th>
-            <th><i class="fa-solid fa-tag fa-rotate-90"></i>Phone</th>
-            <th></th>
-        </thead>
+<!-- table User -->
+<table class="table">
+    <!-- thead -->
+    <thead>
+        <th><i class="fa-solid fa-user"></i>Name</th>
+        <th><i class="fa-solid fa-lock"></i>City</th>
+        <th><i class="fa-solid fa-clock"></i>Status<i class="fa-solid fa-arrow-up-long"></i></th>
+        <th><i class="fa-solid fa-tag fa-rotate-90"></i>Phone</th>
+        <th></th>
+    </thead>
 
-        <!-- tbody -->
-        <tbody class="tbody">
+    <!-- tbody -->
+    <tbody class="tbody">
 
-        </tbody>
-    </table>
+    </tbody>
+</table>
 
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 
 </html>
