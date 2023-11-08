@@ -3,7 +3,7 @@ let tbody = document.querySelector(".tbody")
 let data = [
     {
         id: 1,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -12,7 +12,7 @@ let data = [
     },
     {
         id: 2,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -21,7 +21,7 @@ let data = [
     },
     {
         id: 3,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -30,7 +30,7 @@ let data = [
     },
     {
         id: 4,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -39,7 +39,7 @@ let data = [
     },
     {
         id: 5,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -48,7 +48,7 @@ let data = [
     },
     {
         id: 6,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -57,7 +57,7 @@ let data = [
     },
     {
         id: 7,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -66,7 +66,7 @@ let data = [
     },
     {
         id: 8,
-        img: "img",
+        img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
         city: "Dushanbe",
@@ -83,8 +83,8 @@ function get() {
         let tr = document.querySelector("tr")
 
 
-        let tdImg = document.createElement("td")
-        tdImg.src = "?"
+        let tdImg = document.createElement("img")
+        tdImg.src = elem.img
 
         let tdName = document.createElement("tr")
         tdName.innerHTML = elem.name
@@ -106,9 +106,9 @@ function get() {
         tdPhone.innerHTML = elem.phone
 
         let tdThreedot = document.createElement("td")
-        tdThreedot.innerHTML="⚪⚪⚪"
+        tdThreedot.innerHTML = "⚪⚪⚪"
 
-        tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone,tdThreedot)
+        tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
 
 
     })
