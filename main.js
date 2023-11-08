@@ -53,25 +53,25 @@ let data = [
         id: 1,
         img: "/img/av1.svg",
         name: "Jacob Jones",
-        email: "email@exemple.com",
+        email: "jackson.graham@example.com",
         city: "Dushanbe",
         phone: "88888 0090",
         isComplete: false
     },
     {
         id: 2,
-        img: "/img/av1.svg",
-        name: "Jacob Jones",
-        email: "email@exemple.com",
+        img: "/img/av2.svg",
+        name: "Heny Hawkins",
+        email: "hell.email@exemple.com",
         city: "Kulob",
         phone: "88888 0090",
         isComplete: false
     },
     {
         id: 3,
-        img: "/img/av1.svg",
-        name: "Jacob Jones",
-        email: "email@exemple.com",
+        img: "/img/av3.svg",
+        name: "Jenny Wilson",
+        email: "bill.sandears@example.com",
         city: "Dushanbe",
         phone: "88888 0090",
         isComplete: false
@@ -99,15 +99,14 @@ function get() {
         tdImg.src = elem.img
 
 
-        let name = document.createElement("h2")
+        let name = document.createElement("h3")
         name.innerHTML = elem.name
 
 
-        let tdEmail = document.createElement("h4
-        ")
+        let tdEmail = document.createElement("h5")
         tdEmail.innerHTML = elem.email
-        divTwo.append(name,tdEmail)
-        divName.append(tdImg,divTwo)
+        divTwo.append(name, tdEmail)
+        divName.append(tdImg, divTwo)
         tdName.appendChild(divName)
 
 
@@ -143,7 +142,7 @@ function get() {
             editUser(elem.id)
         }
 
-        tr.append(tdName, tdCity,btnIn, tdPhone, tdThreedot)
+        tr.append(tdName, tdCity, btnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
 
     })
