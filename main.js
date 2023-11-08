@@ -106,7 +106,7 @@ function get() {
         tdPhone.innerHTML = elem.phone
 
         let tdThreedot = document.createElement("td")
-        tdThreedot.innerHTML = "⚪⚪⚪"
+        tdThreedot.innerHTML = "..."
 
         tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
 
