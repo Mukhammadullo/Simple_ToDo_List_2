@@ -21,7 +21,7 @@ let EditEmail = document.querySelector(".EditEmail")
 let EditCity = document.querySelector(".EditCity")
 let EditPhone = document.querySelector(".EditPhone")
 let dialogEditbtn = document.querySelector(".dialogEditbtn")
-
+let inpSearch = document.querySelector(".inpSearch")
 
 
 dialogAdd_cancel.onclick = () => {
@@ -76,10 +76,17 @@ let data = [
         phone: "88888 0090",
         isComplete: false
     },
-
-
-
 ]
+
+let search = document.querySelector(".search")
+//search
+search.onclick = () => {
+    let word = inpSearch.value.toLowerCase().trim()
+    data = data.filter(el => {
+        return el.name.toLowerCase().trim().includes(word)
+    })
+    get()
+}
 
 
 // get
@@ -114,12 +121,10 @@ function get() {
         tdCity.innerHTML = elem.city
 
 
-        // let tdStatus = document.createElement("td")
-        // tdStatus.innerHTML = "INECTIVE"
+     
         let btnIn = document.createElement("button")
         btnIn.innerHTML = "inective"
-
-
+        
 
         let tdPhone = document.createElement("td")
         tdPhone.innerHTML = elem.phone
