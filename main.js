@@ -3,7 +3,12 @@ let btnNew = document.querySelector(".btnNew")
 let dialogAdd = document.querySelector(".dialogAdd")
 let dialogSetings = document.querySelector(".dialogSetings")
 let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
+let dialogAdd_btnx = document.querySelector(".dialogAdd_btnx")
 
+// dialogAdd_btnx
+dialogAdd_btnx.onclick = () => {
+    dialogAdd.close()
+}
 // dialogAdd show
 btnNew.onclick = () => {
     dialogAdd.showModal()
@@ -114,6 +119,7 @@ function get() {
         tdStatus.innerHTML = "INECTIVE"
 
 
+
         let tdPhone = document.createElement("td")
         tdPhone.innerHTML = elem.phone
 
@@ -146,6 +152,11 @@ function delUser(id) {
     get()
     dialogSetings.close()
 }
+
+
+// add
+
+
 
 
 
