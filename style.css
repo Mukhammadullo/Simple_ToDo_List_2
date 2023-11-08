@@ -165,9 +165,25 @@ td {
 }
 
 /* dialogAdd_img */
-.dialogAdd_img{
+.dialogAdd_img {
     width: 350px;
     height: 30px;
-    border-radius:5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+/* dialogAdd_name */
+.dialogAdd_name {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+/* dialog_surname */
+.dialog_surname {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
     border: 1px solid grey;
 }
