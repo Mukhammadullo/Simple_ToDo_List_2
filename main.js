@@ -95,6 +95,7 @@ function get() {
         let tdImg = document.createElement("img")
         tdImg.src = elem.img
 
+
         let tdName = document.createElement("tr")
         tdName.innerHTML = elem.name
 
@@ -116,6 +117,9 @@ function get() {
 
         let tdThreedot = document.createElement("td")
         tdThreedot.innerHTML = "..."
+        tdThreedot.onclick = () => {
+            dialogSetings.showModal()
+        }
 
         tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
 

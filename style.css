@@ -1,7 +1,8 @@
 /* body */
-body{
+body {
     padding: 10px;
 }
+
 /* head */
 .head {
     width: 100%;
@@ -182,7 +183,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 /* dialog_surname */
@@ -191,7 +192,7 @@ margin-bottom: 12px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 /* dialogAdd_email */
@@ -200,7 +201,7 @@ margin-bottom: 12px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 /* dialogAdd_state */
@@ -209,7 +210,7 @@ margin-bottom: 12px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 /* dialogAdd_city */
@@ -218,7 +219,7 @@ margin-bottom: 12px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 /* dialogAdd_phone */
@@ -257,4 +258,12 @@ margin-bottom: 12px;
     border: #2196F3;
     color: #2196F3;
     border-radius: 5px;
+}
+
+
+/* dialogSetings */
+.dialogSetings {
+    width: 250px;
+    height: 80px;
+    border: none;
 }
