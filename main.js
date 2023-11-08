@@ -98,7 +98,7 @@ function get() {
         tdName.innerHTML = elem.name
 
 
-        let tdEmail = document.createElement("td")
+        let tdEmail = document.createElement("tr")
         tdEmail.innerHTML = elem.email
 
 
@@ -133,8 +133,8 @@ function get() {
             editUser(elem.id)
         }
 
-        tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
-        // tbody.appendChild(tr)
+        tr.append(tdImg,tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
+        tbody.appendChild(tr)
 
     })
 }
