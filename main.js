@@ -111,6 +111,7 @@ function get() {
 
 
 
+
         let tdPhone = document.createElement("td")
         tdPhone.innerHTML = elem.phone
 
@@ -178,8 +179,6 @@ dialogAdd_save.onclick = () => {
 // edit
 
 let idx
-
-
 function editUser(id) {
     dialogEdit.showModal()
     let user = data.find((elem) => elem.id == id)
@@ -204,4 +203,5 @@ dialogEditbtn.onclick = () => {
     })
     get()
     dialogEdit.close()
+    dialogSetings.close()
 }
