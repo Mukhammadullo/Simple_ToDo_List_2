@@ -98,7 +98,7 @@ function get() {
 
         let tdEmail = document.createElement("td")
         tdEmail.innerHTML = elem.email
-
+        
 
         let tdCity = document.createElement("td")
         tdCity.innerHTML = elem.city
