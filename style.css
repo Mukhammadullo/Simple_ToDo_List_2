@@ -163,3 +163,11 @@ td {
     background-color: transparent;
     border: none;
 }
+
+/* dialogAdd_img */
+.dialogAdd_img{
+    width: 350px;
+    height: 30px;
+    border-radius:5px;
+    border: 1px solid grey;
+}
