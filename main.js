@@ -4,6 +4,13 @@ let dialogAdd = document.querySelector(".dialogAdd")
 let dialogSetings = document.querySelector(".dialogSetings")
 let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
 let dialogAdd_btnx = document.querySelector(".dialogAdd_btnx")
+let dialogAdd_save = document.querySelector(".dialogAdd_save")
+let dialogAdd_img = document.querySelector(".dialogAdd_img")
+let dialogAdd_name = document.querySelector(".dialogAdd_name")
+let dialogAdd_email = document.querySelector(".dialogAdd_email")
+let dialogAdd_state = document.querySelector(".dialogAdd_state")
+let dialogAdd_city = document.querySelector(".dialogAdd_city")
+let dialogAdd_phone = document.querySelector(".dialogAdd_phone")
 
 // dialogAdd_btnx
 dialogAdd_btnx.onclick = () => {
@@ -155,7 +162,17 @@ function delUser(id) {
 
 
 // add
-
+dialogAdd_save.onclick = () => {
+    let newUser = {
+        id: new Date(),
+        img: dialogAdd_img.value,
+        name: dialogAdd_name.value,
+        email: dialogAdd_email.value,
+        city: dialogAdd_city.value,
+        phone: dialogAdd_phone.value,
+        isComplete: false
+    }
+}
 
 
 
