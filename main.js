@@ -1,4 +1,5 @@
 let tbody = document.querySelector(".tbody")
+let dialogAdd = document.querySelector(".dialogAdd")
 
 let data = [
     {
