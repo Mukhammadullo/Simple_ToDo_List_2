@@ -69,13 +69,32 @@
     margin-top: 20px;
     margin-bottom: 50px;
     display: flex;
+    justify-content: space-between;
 }
 
 /* navbar_left */
 .navbar_left {
-    width: 70%;
+    width: 53%;
     height: 75px;
     border: 1px solid lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* .inpStatus */
+.inpStatus {
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/* inpCity */
+.inpCity {
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
 }
 
 /* navbar_right */
@@ -83,4 +102,15 @@
     width: 30%;
     height: 75px;
     border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* inpSearch */
+
+.inpSearch {
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
 }
