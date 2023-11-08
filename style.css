@@ -263,7 +263,35 @@ td {
 
 /* dialogSetings */
 .dialogSetings {
-    width: 250px;
+    width: 200px;
     height: 80px;
     border: none;
+    box-shadow: 0px 0px 7px black;
+}
+
+/* dialogSetings_view */
+.dialogSetings_view {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background-color: transparent;
+}
+
+/* dialogSetings_edit */
+.dialogSetings_edit {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    background-color: transparent;
+}
+
+/* dialogSetings_delete */
+.dialogSetings_delete {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    background-color: transparent;
 }
