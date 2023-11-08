@@ -181,9 +181,71 @@ td {
 }
 
 /* dialog_surname */
-.dialog_surname {
+.dialogAdd_surname {
     width: 350px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+}
+
+/* dialogAdd_email */
+.dialogAdd_email {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+/* dialogAdd_state */
+.dialogAdd_state {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+/* dialogAdd_city */
+.dialogAdd_city {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+/* dialogAdd_phone */
+.dialogAdd_phone {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+/* dialogAdd_footer */
+.dialogAdd_footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+/* dialogAdd_save */
+.dialogAdd_save {
+    width: 70px;
+    height: 30px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* dialogAdd_cancel */
+.dialogAdd_cancel {
+    width: 70px;
+    height: 30px;
+    border: #2196F3;
+    color: #2196F3;
+    border-radius: 5px;
 }
