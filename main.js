@@ -172,6 +172,14 @@ dialogAdd_save.onclick = () => {
         phone: dialogAdd_phone.value,
         isComplete: false
     }
+    data.push(newUser)
+    dialogAdd.close()
+    dialogAdd_img.value = ""
+    dialogAdd_name.value = ""
+    dialogAdd_email.value = ""
+    dialogAdd_city.value = ""
+    dialogAdd_phone.value = ""
+    get()
 }
 
 
