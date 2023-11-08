@@ -1,10 +1,14 @@
 let tbody = document.querySelector(".tbody")
 let btnNew = document.querySelector(".btnNew")
 let dialogAdd = document.querySelector(".dialogAdd")
+let dialogSetings = document.querySelector(".dialogSetings")
 
+// dialogAdd show
 btnNew.onclick = () => {
     dialogAdd.showModal()
 }
+
+
 
 let data = [
     {
@@ -98,7 +102,7 @@ function get() {
 
         let tdEmail = document.createElement("td")
         tdEmail.innerHTML = elem.email
-        
+
 
         let tdCity = document.createElement("td")
         tdCity.innerHTML = elem.city
