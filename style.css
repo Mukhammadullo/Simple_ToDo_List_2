@@ -69,7 +69,7 @@ body {
     width: 100%;
     height: 80px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
 }
@@ -125,6 +125,30 @@ body {
     border-collapse: collapse;
     background-color: #FBFBFB;
 }
+
+thead {
+    border-bottom: 1px solid #D5DBE1;
+}
+
+/* thead_Name */
+.fa-user {
+    padding: 8px;
+}
+
+.fa-lock {
+    padding: 8px;
+}
+
+.fa-clock {
+    padding: 8px;
+}
+.fa-arrow-up-long{
+    padding: 8px;
+}
+.fa-tag {
+    padding: 8px;
+}
+
 
 th {
     height: 40px;

@@ -87,7 +87,7 @@ function get() {
     tbody.innerHTML = ""
     data.forEach((elem) => {
 
-        let tr = document.querySelector("tr")
+        let tr = document.createElement("tr")
 
 
         let tdImg = document.createElement("img")
@@ -134,7 +134,7 @@ function get() {
         }
 
         tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
-
+        // tbody.appendChild(tr)
 
     })
 }
