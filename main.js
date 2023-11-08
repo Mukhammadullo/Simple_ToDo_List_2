@@ -105,7 +105,7 @@ function get() {
 
 
         let tdStatus = document.createElement("td")
-        tdStatus.innerHTML = "status"
+        tdStatus.innerHTML = "INECTIVE"
 
 
         let tdPhone = document.createElement("td")
