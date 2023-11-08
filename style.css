@@ -59,3 +59,28 @@
     border: none;
     font-weight: bold;
 }
+
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+/* navbar_left */
+.navbar_left {
+    width: 70%;
+    height: 75px;
+    border: 1px solid lightblue;
+}
+
+/* navbar_right */
+.navbar_right {
+    width: 30%;
+    height: 75px;
+    border: 1px solid blue;
+}
