@@ -88,6 +88,7 @@
     width: 220px;
     height: 35px;
     border-radius: 5px;
+    border: 1px solid grey;
 }
 
 /* inpCity */
@@ -95,6 +96,7 @@
     width: 220px;
     height: 35px;
     border-radius: 5px;
+    border: 1px solid grey;
 }
 
 /* navbar_right */
@@ -113,6 +115,7 @@
     width: 220px;
     height: 35px;
     border-radius: 5px;
+    border: 1px solid grey;
 }
 
 
@@ -170,6 +173,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+    margin-bottom: 12px;
 }
 
 /* dialogAdd_name */
@@ -178,6 +182,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+margin-bottom: 12px;
 }
 
 /* dialog_surname */
@@ -186,6 +191,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+margin-bottom: 12px;
 }
 
 /* dialogAdd_email */
@@ -194,6 +200,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+margin-bottom: 12px;
 }
 
 /* dialogAdd_state */
@@ -202,6 +209,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+margin-bottom: 12px;
 }
 
 /* dialogAdd_city */
@@ -210,6 +218,7 @@ td {
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
+margin-bottom: 12px;
 }
 
 /* dialogAdd_phone */
