@@ -39,7 +39,7 @@ let data = [
         img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
-        city: "Dushanbe",
+        city: "Bokhtar",
         phone: "88888 0090",
         isComplete: false
     },
@@ -48,7 +48,7 @@ let data = [
         img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
-        city: "Bokhtar",
+        city: "Dushanbe",
         phone: "88888 0090",
         isComplete: false
     },
@@ -57,7 +57,7 @@ let data = [
         img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
-        city: "Dushanbe",
+        city: "Khujand",
         phone: "88888 0090",
         isComplete: false
     },
@@ -75,7 +75,7 @@ let data = [
         img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
-        city: "Dushanbe",
+        city: "Hisor",
         phone: "88888 0090",
         isComplete: false
     }
