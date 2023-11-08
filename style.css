@@ -164,7 +164,10 @@ td {
     border-bottom: 1px solid #D5DBE1;
 }
 
-
+.divName{
+    display: flex;
+    align-items: center;
+}
 
 /* dialog Add */
 .dialogAdd {

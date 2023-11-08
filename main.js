@@ -89,26 +89,36 @@ function get() {
 
         let tr = document.createElement("tr")
 
+        let divName = document.createElement("div")
+        divName.classList.add("divName")
+        let divTwo = document.createElement("div")
+        let tdName = document.createElement("td")
+
 
         let tdImg = document.createElement("img")
         tdImg.src = elem.img
 
 
-        let tdName = document.createElement("tr")
-        tdName.innerHTML = elem.name
+        let name = document.createElement("h2")
+        name.innerHTML = elem.name
 
 
-        let tdEmail = document.createElement("tr")
+        let tdEmail = document.createElement("h4
+        ")
         tdEmail.innerHTML = elem.email
+        divTwo.append(name,tdEmail)
+        divName.append(tdImg,divTwo)
+        tdName.appendChild(divName)
 
 
         let tdCity = document.createElement("td")
         tdCity.innerHTML = elem.city
 
 
-        let tdStatus = document.createElement("td")
-        tdStatus.innerHTML = "INECTIVE"
-
+        // let tdStatus = document.createElement("td")
+        // tdStatus.innerHTML = "INECTIVE"
+        let btnIn = document.createElement("button")
+        btnIn.innerHTML = "inective"
 
 
 
@@ -133,7 +143,7 @@ function get() {
             editUser(elem.id)
         }
 
-        tr.append(tdImg,tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
+        tr.append(tdName, tdCity,btnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
 
     })
