@@ -6,7 +6,6 @@ body{
 .head {
     width: 100%;
     height: 40px;
-    border: 1px solid blue;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -24,7 +23,6 @@ body{
 .head_right {
     width: 25%;
     height: 35px;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +67,6 @@ body{
 .navbar {
     width: 100%;
     height: 80px;
-    border: 1px solid red;
     margin-top: 20px;
     margin-bottom: 50px;
     display: flex;
@@ -78,9 +75,8 @@ body{
 
 /* navbar_left */
 .navbar_left {
-    width: 53%;
+    width: 51%;
     height: 75px;
-    border: 1px solid lightblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +103,6 @@ body{
 .navbar_right {
     width: 30%;
     height: 75px;
-    border: 1px solid blue;
     display: flex;
     justify-content: end;
     align-items: center;

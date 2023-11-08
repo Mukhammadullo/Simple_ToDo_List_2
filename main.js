@@ -9,7 +9,6 @@ btnNew.onclick = () => {
 }
 
 
-
 let data = [
     {
         id: 1,
@@ -124,6 +123,7 @@ function get() {
     })
 }
 get()
+
 
 
 
