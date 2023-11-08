@@ -1,5 +1,10 @@
 let tbody = document.querySelector(".tbody")
+let btnNew = document.querySelector(".btnNew")
 let dialogAdd = document.querySelector(".dialogAdd")
+
+btnNew.onclick = () => {
+    dialogAdd.showModal()
+}
 
 let data = [
     {
@@ -16,7 +21,7 @@ let data = [
         img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
-        city: "Dushanbe",
+        city: "Kulob",
         phone: "88888 0090",
         isComplete: false
     },
@@ -43,7 +48,7 @@ let data = [
         img: "/img/av1.svg",
         name: "Jacob Jones",
         email: "email@exemple.com",
-        city: "Dushanbe",
+        city: "Bokhtar",
         phone: "88888 0090",
         isComplete: false
     },

@@ -135,3 +135,11 @@ td {
     height: 40px;
     border-bottom: 1px solid #D5DBE1;
 }
+
+
+
+/* dialog Add */
+.dialogAdd {
+    width: 500px;
+    height: 400px;
+}
