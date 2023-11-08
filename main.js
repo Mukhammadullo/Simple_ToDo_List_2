@@ -2,6 +2,7 @@ let tbody = document.querySelector(".tbody")
 let btnNew = document.querySelector(".btnNew")
 let dialogAdd = document.querySelector(".dialogAdd")
 let dialogSetings = document.querySelector(".dialogSetings")
+let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
 
 // dialogAdd show
 btnNew.onclick = () => {
@@ -87,6 +88,7 @@ let data = [
 
 // get
 function get() {
+    tbody.innerHTML = ""
     data.forEach((elem) => {
 
         let tr = document.querySelector("tr")
@@ -117,8 +119,14 @@ function get() {
 
         let tdThreedot = document.createElement("td")
         tdThreedot.innerHTML = "..."
+        tdThreedot.classList.add("tdThreedot")
         tdThreedot.onclick = () => {
             dialogSetings.showModal()
+        }
+
+        // delete
+        dialogSetings_delete.onclick = () => {
+            delUser(elem.id)
         }
 
         tbody.append(tdName, tdEmail, tdCity, tdStatus, tdPhone, tdThreedot)
@@ -128,6 +136,16 @@ function get() {
 }
 get()
 
+
+
+// delete
+function delUser(id) {
+    data = data.filter((elem) => {
+        return elem.id != id
+    })
+    get()
+    dialogSetings.close()
+}
 
 
 
