@@ -27,7 +27,12 @@ let dialogEdit_btnx = document.querySelector(".dialogEdit_btnx")
 let dialogSetings_view = document.querySelector(".dialogSetings_view")
 let dialogInfo = document.querySelector(".dialogInfo")
 let info_btnx = document.querySelector(".info_btnx")
+let imgInfo = document.querySelector(".imgInfo")
 let infoName = document.querySelector(".infoName")
+let infoEmail = document.querySelector(".infoEmail")
+let infoCity = document.querySelector(".infoCity")
+let infoStatus = document.querySelector(".infoStatus")
+let infoPhone = document.querySelector(".infoPhone")
 
 info_btnx.onclick = () => {
     dialogInfo.close()
@@ -160,6 +165,7 @@ function get() {
         tdThreedot.innerHTML = "..."
         tdThreedot.classList.add("tdThreedot")
         tdThreedot.onclick = () => {
+            infoUser(elem.id)
             dialogSetings.showModal()
         }
 
@@ -174,7 +180,7 @@ function get() {
             editUser(elem.id)
         }
 
-       
+
 
         tr.append(tdName, tdCity, btnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
@@ -258,4 +264,10 @@ dialogEditbtn.onclick = () => {
 function infoUser(id) {
     let userIn = data.find((elem) => elem.id == id)
     infoName.innerHTML = userIn.name
+    imgInfo.src = userIn.img
+    infoName.innerHTML = userIn.name
+    infoEmail.innerHTML = userIn.email
+    infoCity.innerHTML = userIn.city
+    infoStatus.innerHTML = userIn.isComplete
+    infoPhone.innerHTML = userIn.phone
 }
