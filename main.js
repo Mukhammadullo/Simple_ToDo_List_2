@@ -27,7 +27,7 @@ let dialogEdit_btnx = document.querySelector(".dialogEdit_btnx")
 let dialogSetings_view = document.querySelector(".dialogSetings_view")
 let dialogInfo = document.querySelector(".dialogInfo")
 let info_btnx = document.querySelector(".info_btnx")
-
+let infoName = document.querySelector(".infoName")
 
 info_btnx.onclick = () => {
     dialogInfo.close()
@@ -174,6 +174,8 @@ function get() {
             editUser(elem.id)
         }
 
+       
+
         tr.append(tdName, tdCity, btnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
 
@@ -249,8 +251,11 @@ dialogEditbtn.onclick = () => {
 
 
 
-// let user = data.find((elem) => elem.id == id)
-// infoName.innerHTML = user.name
-// infoEmail.innerHTML = user.email
 
 
+
+// infoUser
+function infoUser(id) {
+    let userIn = data.find((elem) => elem.id == id)
+    infoName.innerHTML = userIn.name
+}
