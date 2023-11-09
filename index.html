@@ -49,7 +49,7 @@
     </div>
     <div class="navbar_right">
         <input type="text" class="inpSearch" placeholder="Name, email,etc... ">
-        <button class="search">search</button>
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 </div>
 
@@ -63,20 +63,28 @@
     <input type="text" placeholder=".png / .jpg / .jpeg" class="dialogAdd_img" required>
     <input type="text" placeholder="Fullname" class="dialogAdd_name" required>
     <input type="text" placeholder="E-mail" class="dialogAdd_email" required>
-    <input type="text" placeholder="chosse state" class="dialogAdd_state" required>
-    
+
+    <!-- chose state -->
+    <!-- <input type="text" placeholder="chosse state" class="dialogAdd_state" required> -->
+    <select name="" id="" class="dialogAdd_state">
+        <option value="">INECTIVE</option>
+        <option value="">ACTIVE</option>
+
+    </select>
+
+    <!-- city -->
+    <!-- <input type="text" placeholder="city" class="dialogAdd_city" required> -->
     <select name="" id="" class="dialogAdd_city">
         <option value="">All cites</option>
         <option value="">Dushanbe</option>
         <option value="">Bokhtar</option>
         <option value="">Khujand</option>
     </select>
-    
-    <!-- <input type="text" placeholder="city" class="dialogAdd_city" required> -->
-    
-    
+
+
+
     <input type="text" placeholder="phone" class="dialogAdd_phone" required>
-  <hr>
+    <hr>
     <div class="dialogAdd_footer">
         <button class="dialogAdd_save">SAVE</button>
         <button class="dialogAdd_cancel">CANCEL</button>
@@ -96,11 +104,14 @@
 </dialog>
 
 <!-- dialog settings -->
+<div class="dialogSetings_main">
 <dialog class="dialogSetings">
     <button class="dialogSetings_view"><i class="fa-solid fa-circle-user"></i>View profile</button>
     <button class="dialogSetings_edit"><i class="fa-solid fa-pen"></i>Edit</button>
-    <button class="dialogSetings_delete"><i class="fa-solid fa-trash"></i>Delete</button>
+    <button class="dialogSetings_delete"><i class="fa-solid fa-trash ss"></i>Delete</button>
 </dialog>
+</div>
+
 
 <!-- dialogInfo -->
 <dialog class="dialogInfo">

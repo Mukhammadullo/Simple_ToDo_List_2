@@ -120,6 +120,17 @@ body {
     align-items: center;
 }
 
+
+/* search */
+.search {
+    width: 40px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+margin-left: 5px;
+}
+
 /* inpSearch */
 
 .inpSearch {
@@ -303,17 +314,33 @@ td {
 }
 
 
+/* dialogSetings_main */
+.dialogSetings_main {
+    position: absolute;
+}
+
 /* dialogSetings */
 .dialogSetings {
-    width: 200px;
+    position: relative;
+    top: 240px;
+    left: 750px;
+    width: 160px;
     height: 80px;
     border: none;
     box-shadow: 0px 0px 7px black;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center; */
 }
+
+
 
 /* dialogSetings_view */
 .dialogSetings_view {
-    width: 80%;
+    width: 100%;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     border: none;
@@ -323,6 +350,7 @@ td {
 /* dialogSetings_edit */
 .dialogSetings_edit {
     width: 100%;
+    padding: 5px;
     display: flex;
     justify-content: space-evenly;
     border: none;
@@ -332,12 +360,16 @@ td {
 /* dialogSetings_delete */
 .dialogSetings_delete {
     width: 100%;
+    padding: 5px;
     display: flex;
     justify-content: space-evenly;
     border: none;
     background-color: transparent;
 }
 
+.ss {
+    color: red;
+}
 
 /* tdThreedot */
 .tdThreedot {
