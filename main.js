@@ -2,7 +2,6 @@ let tbody = document.querySelector(".tbody")
 let btnNew = document.querySelector(".btnNew")
 let dialogAdd = document.querySelector(".dialogAdd")
 let dialogSetings = document.querySelector(".dialogSetings")
-let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
 let dialogSetings_edit = document.querySelector(".dialogSetings_edit")
 let dialogAdd_btnx = document.querySelector(".dialogAdd_btnx")
 let dialogAdd_save = document.querySelector(".dialogAdd_save")
@@ -33,7 +32,12 @@ let infoEmail = document.querySelector(".infoEmail")
 let infoCity = document.querySelector(".infoCity")
 let infoStatus = document.querySelector(".infoStatus")
 let infoPhone = document.querySelector(".infoPhone")
+let InfoDel = document.querySelector(".InfoDel")
+let InfobtnEdit = document.querySelector(".InfobtnEdit")
 
+InfobtnEdit.onclick = () => {
+    dialogEdit.showModal()
+}
 
 info_btnx.onclick = () => {
     dialogInfo.close()
@@ -115,17 +119,18 @@ let search = document.querySelector(".search")
 //search
 search.onclick = () => {
     let word = inpSearch.value.toLowerCase().trim()
-    data = data.filter(el => {
+   let data2 = data.filter(el => {
         return el.name.toLowerCase().trim().includes(word)
     })
-    get()
+    get(data2)
 }
 
 
 // get
-function get() {
+function get(data) {
     tbody.innerHTML = ""
     data.forEach((elem) => {
+
 
         let tr = document.createElement("tr")
 
@@ -171,11 +176,18 @@ function get() {
         tdThreedot.onclick = () => {
             infoUser(elem.id)
             dialogSetings.showModal()
+            // delete
+            let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
+            dialogSetings_delete.onclick = () => {
+                delUser(elem.id)
+            }
         }
 
-        // delete
-        dialogSetings_delete.onclick = () => {
+     
+
+        InfoDel.onclick = () => {
             delUser(elem.id)
+            dialogInfo.close()  
         }
 
 
@@ -187,34 +199,31 @@ function get() {
 
 
         // Complete
-        let check = document.createElement("input")
-        check.type = "checkbox"
-        check.checked = elem.isComplete
-
-        if (elem.isComplete == true) {
-            btnCom.innerHTML = "true"
-            btnCom.style.backgroundColor = "green"
-        }
-        btnIn.onclick = () => {
-            completeuser(elem.id)
-        }
-        
+        // btnIn.onclick = () => {
+        //     if (elem.isComplete == true) {
+        //         btnCom.innerHTML = "true"
+        //         btnCom.style.backgroundColor = "green"
+        //     }
+        //     btnIn.onclick = () => {
+        //         completeuser(elem.id)
+        //     }
+        // }
 
         tr.append(tdName, tdCity, tdBtnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
 
     })
 }
-get()
+get(data)
 
 
 
 // delete
 function delUser(id) {
-    data = data.filter((elem) => {
+     let data1 = data.filter((elem) => {
         return elem.id != id
     })
-    get()
+    get(data1)
     dialogSetings.close()
 }
 
@@ -237,7 +246,7 @@ dialogAdd_save.onclick = () => {
     dialogAdd_email.value = ""
     dialogAdd_city.value = ""
     dialogAdd_phone.value = ""
-    get()
+    get(data)
 }
 
 
@@ -292,12 +301,12 @@ function infoUser(id) {
 
 
 // complete
-function completeuser(id) {
-    data = data.map((elem) => {
-        if (elem.id == id) {
-            elem.complete = !elem.complete
-        }
-        return elem
-    })
-    get();
-}
+// function completeuser(id) {
+//     data = data.map((elem) => {
+//         if (elem.id == id) {
+//             elem.complete = !elem.complete
+//         }
+//         return elem
+//     })
+//     get();
+// }

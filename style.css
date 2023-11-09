@@ -559,6 +559,17 @@ td {
     background-color: #748998;
 }
 
+
+
+/* info_cards_btns */
+.info_cards_btns {
+    display: flex;
+}
+/* InfobtnEdit */
+.InfobtnEdit{
+    margin-right: 10px;
+}
+
 /* divBtn */
 .divBtn {
     display: flex;
