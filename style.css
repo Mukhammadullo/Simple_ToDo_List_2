@@ -323,8 +323,7 @@ td {
 /* dialogSetings */
 .dialogSetings {
     position: relative;
-    top: 240px;
-    left: 750px;
+    left: 1220px;
     width: 160px;
     height: 80px;
     border: none;
@@ -472,11 +471,11 @@ td {
 
 /* dialogInfo */
 .dialogInfo {
-    width: 350px;
-    height: 460px;
+    width: 450px;
+    height: 860px;
     border: none;
     position: relative;
-    left: 650px;
+    left: 1030px;
 }
 
 /* dialogInfo_main */

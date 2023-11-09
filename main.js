@@ -31,7 +31,7 @@ let dialogInfo = document.querySelector(".dialogInfo")
 
 // dialogSetings_view
 dialogSetings_view.onclick = () => {
-   dialogInfo.showModal()
+   dialogInfo.showModal
 }
 
 // dialogEdit_btnx
@@ -97,7 +97,7 @@ let data = [
         city: "Bokhtar",
         phone: "88888 0090",
         isComplete: false
-    },
+    }
 ]
 
 let search = document.querySelector(".search")
@@ -241,3 +241,11 @@ dialogEditbtn.onclick = () => {
     dialogEdit.close()
     dialogSetings.close()
 }
+
+
+
+// let user = data.find((elem) => elem.id == id)
+// infoName.innerHTML = user.name
+// infoEmail.innerHTML = user.email
+
+
