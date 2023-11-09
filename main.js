@@ -24,13 +24,21 @@ let dialogEditbtn = document.querySelector(".dialogEditbtn")
 let inpSearch = document.querySelector(".inpSearch")
 let dialogEditbtnCancel = document.querySelector(".dialogEditbtnCancel")
 let dialogEdit_btnx = document.querySelector(".dialogEdit_btnx")
+let dialogSetings_view = document.querySelector(".dialogSetings_view")
+let dialogInfo = document.querySelector(".dialogInfo")
 
 
-    // dialogEdit_btnx
-    dialogEdit_btnx.onclick = () => {
-        dialogSetings.close()
-        dialogEdit.close()
-    }
+
+// dialogSetings_view
+dialogSetings_view.onclick = () => {
+   dialogInfo.showModal()
+}
+
+// dialogEdit_btnx
+dialogEdit_btnx.onclick = () => {
+    dialogSetings.close()
+    dialogEdit.close()
+}
 
 // dialogEditbtnCancel
 dialogEditbtnCancel.onclick = () => {
