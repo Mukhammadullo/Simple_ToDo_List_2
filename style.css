@@ -403,7 +403,50 @@ td {
     border: none;
 }
 
+/* EditImg */
+.EditImg {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+}
 
+/* EditName */
+.EditName {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+}
+
+/* EditEmail */
+.EditEmail {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+}
+
+/* EditCity */
+.EditCity {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+}
+
+/* EditPhone */
+.EditPhone {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 8px;
+}
 
 /* divBtn */
 .divBtn {
