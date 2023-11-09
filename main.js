@@ -26,12 +26,17 @@ let dialogEditbtnCancel = document.querySelector(".dialogEditbtnCancel")
 let dialogEdit_btnx = document.querySelector(".dialogEdit_btnx")
 let dialogSetings_view = document.querySelector(".dialogSetings_view")
 let dialogInfo = document.querySelector(".dialogInfo")
+let info_btnx = document.querySelector(".info_btnx")
 
 
+info_btnx.onclick = () => {
+    dialogInfo.close()
+    dialogSetings.close()
+}
 
 // dialogSetings_view
 dialogSetings_view.onclick = () => {
-   dialogInfo.showModal
+    dialogInfo.showModal()
 }
 
 // dialogEdit_btnx
