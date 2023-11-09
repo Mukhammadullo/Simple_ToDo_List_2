@@ -72,7 +72,7 @@ let data = [
         img: "/img/av3.svg",
         name: "Jenny Wilson",
         email: "bill.sandears@example.com",
-        city: "Dushanbe",
+        city: "Bokhtar",
         phone: "88888 0090",
         isComplete: false
     },
@@ -121,10 +121,10 @@ function get() {
         tdCity.innerHTML = elem.city
 
 
-     
+
         let btnIn = document.createElement("button")
         btnIn.innerHTML = "inective"
-        
+
 
         let tdPhone = document.createElement("td")
         tdPhone.innerHTML = elem.phone
