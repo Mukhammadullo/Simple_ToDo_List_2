@@ -22,7 +22,21 @@ let EditCity = document.querySelector(".EditCity")
 let EditPhone = document.querySelector(".EditPhone")
 let dialogEditbtn = document.querySelector(".dialogEditbtn")
 let inpSearch = document.querySelector(".inpSearch")
+let dialogEditbtnCancel = document.querySelector(".dialogEditbtnCancel")
+let dialogEdit_btnx = document.querySelector(".dialogEdit_btnx")
 
+
+    // dialogEdit_btnx
+    dialogEdit_btnx.onclick = () => {
+        dialogSetings.close()
+        dialogEdit.close()
+    }
+
+// dialogEditbtnCancel
+dialogEditbtnCancel.onclick = () => {
+    dialogSetings.close()
+    dialogEdit.close()
+}
 
 dialogAdd_cancel.onclick = () => {
     dialogAdd.close()
