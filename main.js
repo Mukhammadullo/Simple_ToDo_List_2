@@ -34,6 +34,7 @@ let infoCity = document.querySelector(".infoCity")
 let infoStatus = document.querySelector(".infoStatus")
 let infoPhone = document.querySelector(".infoPhone")
 
+
 info_btnx.onclick = () => {
     dialogInfo.close()
     dialogSetings.close()
@@ -153,9 +154,12 @@ function get() {
         tdCity.innerHTML = elem.city
 
 
-
         let btnIn = document.createElement("button")
         btnIn.innerHTML = "inective"
+        btnIn.classList.add("btnIn")
+        let tdBtnIn = document.createElement("td")
+        tdBtnIn.append(btnIn)
+
 
 
         let tdPhone = document.createElement("td")
@@ -182,7 +186,21 @@ function get() {
 
 
 
-        tr.append(tdName, tdCity, btnIn, tdPhone, tdThreedot)
+        // Complete
+        let check = document.createElement("input")
+        check.type = "checkbox"
+        check.checked = elem.isComplete
+
+        if (elem.isComplete == true) {
+            btnCom.innerHTML = "true"
+            btnCom.style.backgroundColor = "green"
+        }
+        btnIn.onclick = () => {
+            completeuser(elem.id)
+        }
+        
+
+        tr.append(tdName, tdCity, tdBtnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
 
     })
@@ -270,4 +288,16 @@ function infoUser(id) {
     infoCity.innerHTML = userIn.city
     infoStatus.innerHTML = userIn.isComplete
     infoPhone.innerHTML = userIn.phone
+}
+
+
+// complete
+function completeuser(id) {
+    data = data.map((elem) => {
+        if (elem.id == id) {
+            elem.complete = !elem.complete
+        }
+        return elem
+    })
+    get();
 }
