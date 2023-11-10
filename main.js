@@ -2,6 +2,7 @@ let tbody = document.querySelector(".tbody")
 let btnNew = document.querySelector(".btnNew")
 let dialogAdd = document.querySelector(".dialogAdd")
 let dialogSetings = document.querySelector(".dialogSetings")
+let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
 let dialogSetings_edit = document.querySelector(".dialogSetings_edit")
 let dialogAdd_btnx = document.querySelector(".dialogAdd_btnx")
 let dialogAdd_save = document.querySelector(".dialogAdd_save")
@@ -34,6 +35,12 @@ let infoStatus = document.querySelector(".infoStatus")
 let infoPhone = document.querySelector(".infoPhone")
 let InfoDel = document.querySelector(".InfoDel")
 let InfobtnEdit = document.querySelector(".InfobtnEdit")
+
+let inpSelCity = document.querySelector(".inpCity")
+inpSelCity.onclick = () => {
+}
+
+
 
 InfobtnEdit.onclick = () => {
     dialogEdit.showModal()
@@ -115,11 +122,11 @@ let data = [
     }
 ]
 
-let search = document.querySelector(".search")
+let search = document.querySelector(".inpSearch2")
 //search
-search.onclick = () => {
-    let word = inpSearch.value.toLowerCase().trim()
-   let data2 = data.filter(el => {
+search.oninput = () => {
+    let word = search.value.toLowerCase().trim()
+    let data2 = data.filter(el => {
         return el.name.toLowerCase().trim().includes(word)
     })
     get(data2)
@@ -130,7 +137,6 @@ search.onclick = () => {
 function get(data) {
     tbody.innerHTML = ""
     data.forEach((elem) => {
-
 
         let tr = document.createElement("tr")
 
@@ -176,18 +182,16 @@ function get(data) {
         tdThreedot.onclick = () => {
             infoUser(elem.id)
             dialogSetings.showModal()
-            // delete
-            let dialogSetings_delete = document.querySelector(".dialogSetings_delete")
-            dialogSetings_delete.onclick = () => {
-                delUser(elem.id)
-            }
         }
 
-     
+        // delete
+        dialogSetings_delete.onclick = () => {
+            delUser(elem.id)
+        }
 
         InfoDel.onclick = () => {
             delUser(elem.id)
-            dialogInfo.close()  
+            dialogInfo.close()
         }
 
 
@@ -216,15 +220,29 @@ function get(data) {
 }
 get(data)
 
+let inpCityjon = document.querySelector(".inpCity")
 
+inpCityjon.onclick = () => {
+    if (inpCityjon.value == "All cites") {
+        get(data)
+    }
+    if (inpCityjon.value == "Dushanbe") {
+        let a = data.filter(el => el.city == "Dushanbe")
+        get(a)
+    }
+    if (inpCityjon.value == "Bokhtar") {
+        let a = data.filter(el => el.city == "Bokhtar")
+        get(a)
+    }
+}
 
 // delete
 function delUser(id) {
-     let data1 = data.filter((elem) => {
+    let data2 = data.filter((elem) => {
         return elem.id != id
     })
-    get(data1)
     dialogSetings.close()
+    get(data2)
 }
 
 
@@ -267,7 +285,7 @@ function editUser(id) {
 }
 
 dialogEditbtn.onclick = () => {
-    data = data.map((elem) => {
+    let data2 = data.map((elem) => {
         if (elem.id == idx) {
             elem.img = EditImg.value
             elem.name = EditName.value
@@ -277,7 +295,7 @@ dialogEditbtn.onclick = () => {
         }
         return elem
     })
-    get()
+    get(data2)
     dialogEdit.close()
     dialogSetings.close()
 }
