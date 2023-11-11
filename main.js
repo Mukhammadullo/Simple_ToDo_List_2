@@ -202,17 +202,7 @@ function get(data) {
 
 
 
-        // Complete
-        // btnIn.onclick = () => {
-        //     if (elem.isComplete == true) {
-        //         btnCom.innerHTML = "true"
-        //         btnCom.style.backgroundColor = "green"
-        //     }
-        //     btnIn.onclick = () => {
-        //         completeuser(elem.id)
-        //     }
-        // }
-
+       
         tr.append(tdName, tdCity, tdBtnIn, tdPhone, tdThreedot)
         tbody.appendChild(tr)
 
@@ -220,8 +210,8 @@ function get(data) {
 }
 get(data)
 
-let inpCityjon = document.querySelector(".inpCity")
 
+let inpCityjon = document.querySelector(".inpCity")
 inpCityjon.onclick = () => {
     if (inpCityjon.value == "All cites") {
         get(data)
@@ -318,13 +308,3 @@ function infoUser(id) {
 }
 
 
-// complete
-// function completeuser(id) {
-//     data = data.map((elem) => {
-//         if (elem.id == id) {
-//             elem.complete = !elem.complete
-//         }
-//         return elem
-//     })
-//     get();
-// }
